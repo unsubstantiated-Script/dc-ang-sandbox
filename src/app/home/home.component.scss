@@ -38,3 +38,8 @@ $primary: #462673;
     background-color: #52A8F2;
     border: 1px solid #F24C27;
 }
+
+.inactive {
+    background-color: $primary;
+    border: 1px solid #52A8F2;
+}
