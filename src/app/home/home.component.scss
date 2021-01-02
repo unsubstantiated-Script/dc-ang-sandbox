@@ -1,0 +1,35 @@
+$primary: #462673;
+
+
+
+.btn {
+        padding: .3em .8em;
+        font-size: 1rem;
+        border: none;
+        border-radius: 3px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        cursor: pointer;
+        user-select: none;
+}
+
+.btn.btn-dark {
+    background-color: $primary;
+    color: #fff;
+}
+
+.btn.btn-dark:hover {
+    background: darken($primary, 10%);
+    color: #fff;
+}
+
+.play-container {
+    padding: 3em; 
+    border: 1px solid lightgrey; 
+    margin-bottom: 1em; 
+
+    input {
+        padding: 1em; 
+        margin-bottom: 2em;
+    }
+}
