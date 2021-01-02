@@ -18,7 +18,10 @@
 
 <div
   class="play-container"
-  [style.background-color]="clickCounter > 4 ? '#52A8F2' : '#683CA6'"
+  [ngStyle]="{
+    'background-color': clickCounter > 4 ? '#52A8F2' : '#683CA6',
+    border: clickCounter > 4 ? '3px solid #683CA6' : '3px solid #52A8F2'
+  }"
 >
   <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
     <p>The click counter <strong>IS GREATER THAN</strong> 4.</p>
